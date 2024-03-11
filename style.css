@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: #141414;
+  color: #fff;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.card {
+  background-color: #1f1f1f;
+  border-radius: 1.5rem;
+  padding: 4rem 3rem 4rem;
+  max-width: 36rem;
+  width: 100%;
+}
+
+.card > img {
+  max-width: 100%;
+  object-fit: cover;
+  width: 14rem;
+  height: 14rem;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.card > h1 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2.8rem;
+}
+
+.card > a {
+  color: #6f73d2;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.card > span {
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  margin-top: 1.8rem;
+  color: #b5b5b5;
+}
+
+.card > ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.6rem;
+  margin-top: 2rem;
+}
+
+.card > ul > li {
+  list-style: none;
+}
+
+.card > ul > li > a {
+  border-radius: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #333333;
+  display: block;
+  padding: 1rem;
+}
+
+.card > ul > li > a:hover {
+  background-color: #6f73d2;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 280px) {
+  body {
+    background-color: #1f1f1f;
+  }
+
+  .card {
+    border-radius: 0%;
+  }
+}
